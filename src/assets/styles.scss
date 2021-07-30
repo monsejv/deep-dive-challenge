@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'DidaticRegular';
+    src: url('./fonts/DidactGothic-Regular.ttf') format('truetype');
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(#f5f5f5, #f3f3f3);
+}
+
+.title{
+    font-family: 'DidaticRegular';
+    font-size: 45px;
+    text-align:center;
+    color: #333;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.h-vh{
+    height: 100vh;
+}
+
+.spinner-grow{
+    width: 45px;
+    height: 45px;
+    span{
+        display: none;
+    }
+}
+
+.question-item{
+    p{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    button{
+        background: transparent;
+        border: none;
+        color: #0dcaf0;
+        font-size: 12px;
+        transition: font-size 2ms;
+        transition-delay: 2ms;
+        &:hover, &:focus{
+            background: transparent;
+            border: none;
+            color: #000;
+            outline: none;
+            box-shadow: none;
+        }
+        &:hover{
+            font-size: 14px;
+        }
+    }
+}
+
+.answer-wrapper{
+    width: 30%;
+    position: fixed;
+    top: 25%;
+    right: 15px;
+    padding: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .question-format{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .answer-format{
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    .answer-wrapper{
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+ }
